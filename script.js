@@ -2,7 +2,7 @@ var century;
 var year;
 var month;
 var day;
-//get inout
+//get input
 
 function getInput(){
     century = parseInt(document.getElementById("century").value);
@@ -23,3 +23,8 @@ if(century == ""){
     alert("input the correct date");
     return false;
 }
+
+//calculate the function
+var d=newDate(year,(month-1),day);
+var d=newDate=d.getDay();
+alert(dayOfWeek);
