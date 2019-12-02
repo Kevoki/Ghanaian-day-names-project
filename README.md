@@ -2,13 +2,12 @@ Ghanian name (Akon names)
 This is a web application of calculting the day of the week one is born. 
 By kevin okioma
 Description
-This is an application on profile about me. It's purpose is to tell potential employers and collaborators more about me.
+This is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name
 
 Setup/Installation Requirements
-$ npm install Portfolio
+$ npm install Ghanian-day-names-project
 More on the application
-This is a simple application is to show my profile to potential employers. A server is not required to run this application, a normal internet connection will suffice to run the application. You do not need to install any dependencies. The application is very basic and light.
-
+Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
 Known Bugs
 I have not encountered any problems with bugs in this aplication.
 
