@@ -28,3 +28,10 @@ if(century == ""){
 var d=newDate(year,(month-1),day);
 var d=newDate=d.getDay();
 alert(dayOfWeek);
+
+//main caller func
+function checkDayOfWeek(){
+    day = calculateDay();
+     checkGender();
+     console.log("The function runs");//Test chackDayOfWeek function
+}
