@@ -1,5 +1,5 @@
-Portfolio
-This is a website about my portfolio, 24th/nov/2019}
+Ghanian name (Akon names)
+This is a web application of calculting the day of the week one is born. 
 By kevin okioma
 Description
 This is an application on profile about me. It's purpose is to tell potential employers and collaborators more about me.
