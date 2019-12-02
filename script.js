@@ -13,13 +13,13 @@ function getInput(){
 if(century == ""){
     alert("Input the correct gender");
     return false;
-}if (year == ""){
+}else if (year == ""){
     alert("Input the correct year");
     return false;
-}if (month == ""){
+}else if (month == ""){
     alert("Input the correct month");
     return false;
-}if(dayOfMonth == ""){
+}else if(dayOfMonth == ""){
     alert("input the correct date");
     return false;
 }
@@ -29,11 +29,11 @@ var d=newDate(year,(month-1),day);
 var d=newDate=d.getDay();
 alert(dayOfWeek);
 
-//main caller func
+//main caller function
 function checkDayOfWeek(){
     day = calculateDay();
      checkGender();
-     console.log("The function runs");//Test chackDayOfWeek function
+     console.log("The function runs");
 }
 
 //arrays
@@ -68,7 +68,7 @@ switch(gender){
               document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your akan name is " + maleNames[6];
             break;
             default:
-            // console.console.log("Pass");//Test male case
+            
           }
     break;
     case gender = "female":
