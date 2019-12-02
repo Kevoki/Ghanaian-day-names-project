@@ -2,10 +2,10 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="styles.css">
         <title>Akan Names</title>
     </head>
-    <script src="js/script.js"></script>
     <body>
         <div class="container">
             <div class="jumbotron">
@@ -40,35 +40,33 @@
                  </div>
                  <div class="col-md-6 right">
                     <h2>Find your Akan name</h2>
-                     <div class="panel col-md-6 offset-sm-6">
+                     <div class="panel col-md-6 offset-sm-12">
+                        <form name="akannames" onsubmit="return false">
                         <div class="form-group top-form">
-                            <label for="century" class="labels">Century</label>
-                            <input type="number" class="form-control" placeholder="Enter the century" id=century required>
-                        </div>     
-                    <div class="form-group">
-                        <label for="year" class="labels">year</label>
-                        <input type="number" class="form-control" placeholder="Enter the year" id="year" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="month" class="labels">Month</label>
-                        <input type="number" class="form-control" placeholder="month" id="month" required min="0" max="12">
-                    </div>
-                    <div class="form-group">
-                        <label for="day" class="labels">Day of the month</label>
-                        <input type="number" placeholder="enter the day of the month" class="form-control" id="monthday" required min="0" max="31">
-                    </div>  
-                     <form class="radio-button">
-                        <input type="radio" class="genders labels" value="male" id="rad1" name="rads" required>Male
-                        <input type="radio" class="genders labels" value="female" id="rad1" name="rads" required>Female
+                            <label for="date" class="labels">Date of Birth</label>
+                            <input type="date" class="form-control" id="date" name="date">                     
+                       </div>  
+                       <br>
+                       <div class="errormsg" id="dateerror"></div>
+                       <br>
+                        <input type="radio" class="genders labels" value="male" id="rad1" name="gender" >Male
+                        <input type="radio" class="genders labels" value="female" id="rad1" name="gender" >Female
+                        <br>
+                        <div class="errormsg" id="gendererror"></div>
+                        <br>
+                        <input type="submit" name="submit" class="btn btn-primary mb-2" onclick="validate()" value="Generate">
+                        <input type="reset" name="reset" class="btn btn-primary mb-2" onclick="refresh(); return false;" value="Refresh">
                     </form>   
-                    <br>
-                        <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Calculate</button></a>
                     <br>    
-                        <h1 id="result"></h1>     
+                         <div>
+                             <p id="result"></p>
+                         </div>    
                     </div>
                 </div>   
              </div>
           </div>
         </div>
+     
     </body>
 </html>
+<script src="script.js"></script>
