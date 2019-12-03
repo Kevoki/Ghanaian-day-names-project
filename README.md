@@ -23,3 +23,4 @@ I used HTML and CSS and JAvaScipt languages to build the website.
 Support and contact details
 If you have questions or you have encountered any issues, have ideas or concerns, I urge you to contact me or make a contribution to the code.
 
+Here is the link to a live site on Github  https://kevoki.github.io/Ghanaian-day-names-project/
